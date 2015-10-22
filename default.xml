@@ -18,6 +18,7 @@
            review="code-review.phablet.ubuntu.com" />
 
   <remote  name="ubp"
+           revision="refs/heads/ubp-5.1.1"
            fetch="https://github.com/ubports" />
 
   <default revision="refs/heads/cm-12.1"
@@ -177,11 +178,11 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" remote="aosp" />
 
   <project path="sdk" name="platform/sdk" remote="aosp" />
-  <project path="system/core" name="CyanogenMod/android_system_core" groups="pdk" />
-  <project path="system/extras" name="CyanogenMod/android_system_extras" groups="pdk" />
+  <project path="system/core" name="android_system_core" remote="ubp" groups="pdk" />
+  <project path="system/extras" name="android_system_extras" remote="ubp" groups="pdk" />
   <project path="system/media" name="CyanogenMod/android_system_media" groups="pdk" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="CyanogenMod/android_system_vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" remote="ubp" groups="pdk" />
 
   <!-- Ubuntu specific repos -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="phablet" />
