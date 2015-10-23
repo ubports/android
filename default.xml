@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="phablet"
+           fetch="../../../"
+           review="code-review.phablet.ubuntu.com" />
+
+  <default revision="refs/tags/android-5.1.1_r5"
+           remote="phablet"
+           sync-j="4" />
+
+  <project path="build" name="aosp/platform/build" groups="pdk,tradefed" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="abi/cpp" name="aosp/platform/abi/cpp" groups="pdk" />
+  <project path="bionic" name="aosp/platform/bionic" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="development" name="aosp/platform/development" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/asus/deb" name="aosp/device/asus/deb" groups="device,flo" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/asus/flo" name="aosp/device/asus/flo" groups="device,flo" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/asus/tilapia" name="aosp/device/asus/tilapia" groups="device,grouper" />
+  <project path="device/common" name="aosp/device/common" groups="pdk-cw-fs" />
+  <project path="device/generic/arm64" name="aosp/device/generic/arm64" groups="pdk" />
+  <project path="device/generic/armv7-a-neon" name="aosp/device/generic/armv7-a-neon" groups="pdk" />
+  <project path="device/generic/common" name="aosp/device/generic/common" groups="pdk" />
+  <project path="device/generic/goldfish" name="aosp/device/generic/goldfish" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/generic/mini-emulator-arm64" name="aosp/device/generic/mini-emulator-arm64" groups="pdk" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="aosp/device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
+  <project path="device/generic/mini-emulator-x86" name="aosp/device/generic/mini-emulator-x86" groups="pdk" />
+  <project path="device/generic/x86" name="aosp/device/generic/x86" groups="pdk" />>
+  <project path="device/lge/hammerhead" name="aosp/device/lge/hammerhead" groups="device,hammerhead" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/lge/mako" name="aosp/device/lge/mako" groups="device,mako" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="device/sample" name="aosp/device/sample" groups="pdk" />
+  <project path="device/samsung/manta" name="aosp/device/samsung/manta" groups="device,manta" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
+  <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
+  <project path="external/bzip2" name="aosp/platform/external/bzip2" groups="pdk" />
+  <project path="external/checkpolicy" name="aosp/platform/external/checkpolicy" groups="pdk" />
+  <project path="external/compiler-rt" name="aosp/platform/external/compiler-rt" groups="pdk" />
+  <project path="external/e2fsprogs" name="aosp/platform/external/e2fsprogs" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/expat" name="aosp/platform/external/expat" groups="pdk" />
+  <project path="external/f2fs-tools" name="aosp/platform/external/f2fs-tools" groups="pdk" />
+  <project path="external/flac" name="aosp/platform/external/flac" groups="pdk" />
+  <project path="external/freetype" name="aosp/platform/external/freetype" groups="pdk" />
+  <project path="external/fsck_msdos" name="aosp/platform/external/fsck_msdos" groups="pdk-cw-fs" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/gcc-demangle" name="aosp/platform/external/gcc-demangle" groups="pdk" />
+  <project path="external/genext2fs" name="aosp/platform/external/genext2fs" groups="pdk-cw-fs" />
+  <project path="external/giflib" name="aosp/platform/external/giflib" groups="pdk-cw-fs" />
+  <project path="external/gtest" name="aosp/platform/external/gtest" groups="pdk" />
+  <project path="external/harfbuzz_ng" name="aosp/platform/external/harfbuzz_ng" groups="pdk-cw-fs" />
+  <project path="external/icu" name="aosp/platform/external/icu" groups="pdk" />
+  <project path="external/jemalloc" name="aosp/platform/external/jemalloc" groups="pdk,flo" />
+  <project path="external/jhead" name="aosp/platform/external/jhead" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/jpeg" name="aosp/platform/external/jpeg" groups="pdk" />
+  <project path="external/jsmn" name="aosp/platform/external/jsmn" groups="pdk" />
+  <project path="external/jsoncpp" name="aosp/platform/external/jsoncpp" groups="pdk-cw-fs" />
+  <project path="external/kernel-headers" name="aosp/platform/external/kernel-headers" groups="pdk-cw-fs" />
+  <project path="external/libcap-ng" name="aosp/platform/external/libcap-ng" />
+  <project path="external/libcxx" name="aosp/platform/external/libcxx" groups="pdk" />
+  <project path="external/libcxxabi" name="aosp/platform/external/libcxxabi" groups="pdk" />
+  <project path="external/libgsm" name="aosp/platform/external/libgsm" groups="pdk" />
+  <project path="external/liblzf" name="aosp/platform/external/liblzf" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/libnl" name="aosp/platform/external/libnl" groups="pdk" />
+  <project path="external/libogg" name="aosp/platform/external/libogg" groups="pdk" />
+  <project path="external/libopus" name="aosp/platform/external/libopus" groups="pdk" />
+  <project path="external/libpng" name="aosp/platform/external/libpng" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/libselinux" name="aosp/platform/external/libselinux" groups="pdk" />
+  <project path="external/libsepol" name="aosp/platform/external/libsepol" groups="pdk" />
+  <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
+  <project path="external/libvpx" name="aosp/platform/external/libvpx" groups="pdk" />
+  <project path="external/mdnsresponder" name="aosp/platform/external/mdnsresponder" groups="pdk" />
+  <project path="external/mksh" name="aosp/platform/external/mksh" groups="pdk" />
+  <project path="external/openssl" name="aosp/platform/external/openssl" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/pcre" name="aosp/platform/external/pcre" groups="pdk-cw-fs" />
+  <project path="external/protobuf" name="aosp/platform/external/protobuf" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/qemu" name="aosp/platform/external/qemu" groups="pdk-cw-fs" />
+  <project path="external/qemu-pc-bios" name="aosp/platform/external/qemu-pc-bios" groups="pdk-cw-fs" />
+  <project path="external/safe-iop" name="aosp/platform/external/safe-iop" groups="pdk" />
+  <project path="external/scrypt" name="aosp/platform/external/scrypt" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/sepolicy" name="aosp/platform/external/sepolicy" groups="pdk" />
+  <project path="external/sfntly" name="aosp/platform/external/sfntly" groups="pdk-cw-fs" />
+  <project path="external/skia" name="aosp/platform/external/skia" groups="pdk-cw-fs" />
+  <project path="external/sonivox" name="aosp/platform/external/sonivox" groups="pdk" />
+  <project path="external/speex" name="aosp/platform/external/speex" groups="pdk" />
+  <project path="external/sqlite" name="aosp/platform/external/sqlite" groups="pdk" />
+  <project path="external/stlport" name="aosp/platform/external/stlport" groups="pdk" />
+  <project path="external/strace" name="aosp/platform/external/strace" groups="pdk-cw-fs" />
+  <project path="external/tinyalsa" name="aosp/platform/external/tinyalsa" groups="pdk" />
+  <project path="external/tinycompress" name="aosp/platform/external/tinycompress" groups="pdk" />
+  <project path="external/tremolo" name="aosp/platform/external/tremolo" groups="pdk" />
+  <project path="external/webp" name="aosp/platform/external/webp" groups="pdk-cw-fs" />
+  <project path="external/webrtc" name="aosp/platform/external/webrtc" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="aosp/platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/yaffs2" name="aosp/platform/external/yaffs2" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/zlib" name="aosp/platform/external/zlib" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/zopfli" name="aosp/platform/external/zopfli" groups="pdk-cw-fs" />
+  <project path="frameworks/av" name="aosp/platform/frameworks/av" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="frameworks/base" name="aosp/platform/frameworks/base" groups="pdk-cw-fs" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="frameworks/native" name="aosp/platform/frameworks/native" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="frameworks/opt/emoji" name="aosp/platform/frameworks/opt/emoji" groups="pdk-cw-fs" />
+  <project path="hardware/akm" name="aosp/platform/hardware/akm" />
+  <project path="hardware/broadcom/libbt" name="aosp/platform/hardware/broadcom/libbt" groups="pdk" />
+  <project path="hardware/broadcom/wlan" name="aosp/platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
+  <project path="hardware/invensense" name="aosp/platform/hardware/invensense" groups="invensense" />
+  <project path="hardware/libhardware" name="aosp/platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="aosp/platform/hardware/libhardware_legacy" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="hardware/qcom/audio" name="aosp/platform/hardware/qcom/audio" groups="qcom,qcom_audio" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="hardware/qcom/bt" name="aosp/platform/hardware/qcom/bt" groups="qcom" />
+  <project path="hardware/qcom/display" name="aosp/platform/hardware/qcom/display" groups="qcom,qcom_display" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="hardware/qcom/gps" name="aosp/platform/hardware/qcom/gps" groups="qcom,qcom_gps" />
+  <project path="hardware/qcom/keymaster" name="aosp/platform/hardware/qcom/keymaster" groups="qcom" />
+  <project path="hardware/qcom/media" name="aosp/platform/hardware/qcom/media" groups="qcom" />
+  <project path="hardware/qcom/msm8960" name="aosp/platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
+  <project path="hardware/qcom/msm8x26" name="aosp/platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
+  <project path="hardware/qcom/msm8x27" name="aosp/platform/hardware/qcom/msm8x27" groups="qcom_msm8x27" />
+  <project path="hardware/qcom/msm8x74" name="aosp/platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" />
+  <project path="hardware/qcom/msm8x84" name="aosp/platform/hardware/qcom/msm8x84" groups="qcom_msm8x84" />
+  <project path="hardware/qcom/power" name="aosp/platform/hardware/qcom/power" groups="qcom" />
+  <project path="hardware/qcom/sensors" name="aosp/platform/hardware/qcom/sensors" groups="qcom" />
+  <project path="hardware/qcom/wlan" name="aosp/platform/hardware/qcom/wlan" groups="qcom_wlan" />
+  <project path="hardware/ril" name="aosp/platform/hardware/ril" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="hardware/samsung_slsi/exynos5" name="aosp/platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
+  <project path="hardware/ti/omap3" name="aosp/platform/hardware/ti/omap3" groups="omap3" />
+  <project path="hardware/ti/omap4-aah" name="aosp/platform/hardware/ti/omap4-aah" groups="omap4-aah" />
+  <project path="hardware/ti/omap4xxx" name="aosp/platform/hardware/ti/omap4xxx" groups="omap4" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="libnativehelper" name="aosp/platform/libnativehelper" groups="pdk" />
+  <project path="prebuilts/clang/darwin-x86/3.1" name="aosp/platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/3.2" name="aosp/platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/arm/3.3" name="aosp/platform/prebuilts/clang/darwin-x86/arm/3.3" groups="arm,darwin,pdk-cw-fs" />
+  <project path="prebuilts/clang/darwin-x86/host/3.4" name="aosp/platform/prebuilts/clang/darwin-x86/host/3.4" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/host/3.5" name="aosp/platform/prebuilts/clang/darwin-x86/host/3.5" groups="pdk,darwin" />
+  <project path="prebuilts/clang/darwin-x86/x86/3.3" name="aosp/platform/prebuilts/clang/darwin-x86/x86/3.3" groups="darwin,pdk-cw-fs,x86" />
+  <project path="prebuilts/clang/linux-x86/3.1" name="aosp/platform/prebuilts/clang/linux-x86/3.1" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/3.2" name="aosp/platform/prebuilts/clang/linux-x86/3.2" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/arm/3.3" name="aosp/platform/prebuilts/clang/linux-x86/arm/3.3" groups="arm,linux,pdk-cw-fs" />
+  <project path="prebuilts/clang/linux-x86/host/3.4" name="aosp/platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/host/3.5" name="aosp/platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/x86/3.3" name="aosp/platform/prebuilts/clang/linux-x86/x86/3.3" groups="linux,pdk-cw-fs,x86" />
+  <project path="prebuilts/devtools" name="aosp/platform/prebuilts/devtools" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.8" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" name="aosp/platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" name="aosp/platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.8" groups="pdk,darwin,arm" />
+  <project path="prebuilts/gcc/darwin-x86/host/headers" name="aosp/platform/prebuilts/gcc/darwin-x86/host/headers" groups="pdk,darwin" />
+  <project path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" name="aosp/platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" groups="pdk,darwin" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.8" groups="pdk,darwin,x86" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="linux" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" groups="linux,x86" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="linux,x86" />
+  <project path="prebuilts/libs/libedit" name="aosp/platform/prebuilts/libs/libedit" groups="pdk-cw-fs" />
+  <project path="prebuilts/maven_repo/android" name="aosp/platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" />
+  <project path="prebuilts/misc" name="aosp/platform/prebuilts/misc" groups="pdk,tradefed" />
+  <project path="prebuilts/ndk" name="aosp/platform/prebuilts/ndk" groups="pdk" />
+  <project path="prebuilts/python/darwin-x86/2.7.5" name="aosp/platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin" />
+  <project path="prebuilts/python/linux-x86/2.7.5" name="aosp/platform/prebuilts/python/linux-x86/2.7.5" groups="linux" />
+  <project path="prebuilts/qemu-kernel" name="aosp/platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/tools" name="aosp/platform/prebuilts/tools" groups="pdk,tools" />
+  <project path="sdk" name="aosp/platform/sdk" groups="pdk-cw-fs" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="system/core" name="aosp/platform/system/core" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="system/extras" name="aosp/platform/system/extras" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="system/keymaster" name="aosp/platform/system/keymaster" groups="pdk" />
+  <project path="system/media" name="aosp/platform/system/media" groups="pdk" />
+  <project path="system/netd" name="aosp/platform/system/netd" groups="pdk" />
+  <project path="system/security" name="aosp/platform/system/security" groups="pdk" />
+  <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
+
+  <!-- Ubuntu specific repos -->
+<!--   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" revision="refs/heads/cm-12.0" /> -->
+  <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" revision="refs/heads/cm-12.1" />
+  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-12.0"/>
+  <project path="external/gpg" name="aosp/platform/external/gpg" revision="refs/heads/master" />
+  <project path="ubuntu/assets" name="ubuntu/assets" revision="refs/heads/master" />
+  <project path="ubuntu/libhybris" name="ubuntu/libhybris" revision="refs/heads/personal/w-ondra/phablet-5.x" />
+  <project path="ubuntu/platform-api" name="ubuntu/platform-api" revision="refs/heads/personal/w-ondra/phablet-5.x" />
+  <project path="ubuntu/upstart-property-watcher" name="ubuntu/upstart-property-watcher" revision="refs/heads/personal/w-ondra/phablet-5.x" />
+
+  <project path="ubuntu/ubuntu_prebuilt_initrd_debs" name="ubuntu/initrd/ubuntu_prebuilt_initrd_debs" revision="refs/heads/master" />
+  <project path="ubuntu/ubuntu_prebuilt_initrd" name="ubuntu/initrd/ubuntu_prebuilt_initrd" revision="refs/heads/master" />
+  <project path="ubuntu/prebuilts" name="ubuntu/prebuilts" revision="refs/heads/master" />
+</manifest>
