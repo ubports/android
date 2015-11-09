@@ -6,6 +6,11 @@
 	review="http://code-review.phablet.ubuntu.com"
 	revision="refs/tags/android-5.1.1_r5" />
 
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-5.1.1_r26" />
+
   <remote name="cm"
 	fetch="http://github.com/CyanogenMod"
 	revision="refs/heads/cm-12.1" />
@@ -13,6 +18,10 @@
   <remote name="ubp"
 	fetch="http://github.com/ubports"
 	revision="refs/heads/ubp-5.1.1" />
+
+  <remote name="them"
+	fetch="http://github.com/TheMuppets"
+	revision="refs/heads/cm-12.1" />
 
   <default remote="phablet"
            sync-j="6" />
@@ -24,6 +33,22 @@
   <project path="bionic" name="android_bionic" groups="pdk" remote="ubp" />
   <project path="development" name="android_development" remote="ubp" />
 
+
+<!-- ubp Devices -->
+
+  <project path="device/oneplus/bacon" name="android_device_oneplus_bacon-1" remote="ubp" />
+  <project path="device/oppo/msm8974-common" name="android_device_oppo_msm8974-common" remote="cm" />
+  <project path="device/oppo/common" name="android_device_oppo_common" remote="cm" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="cm" />
+<!--  <project path="kernel/oneplus/msm8974" name="android_kernel_oneplus_msm8974" remote="cm" /> 
+
+  
+  <project path="vendor/oppo" name="proprietary_vendor_oppo" remote="them" /> -->
+<project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="them" />
+
+
+<!-- |-|-|-|-|-| -->
+
   <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
   <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
   <project path="external/bzip2" name="aosp/platform/external/bzip2" groups="pdk" />
@@ -32,6 +57,7 @@
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="ubp" />
   <project path="external/expat" name="aosp/platform/external/expat" groups="pdk" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" groups="pdk" remote="cm" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" />
   <project path="external/flac" name="android_external_flac" groups="pdk" remote="cm" />
   <project path="external/freetype" name="aosp/platform/external/freetype" groups="pdk" />
   <project path="external/fsck_msdos" name="android_external_fsck_msdos" groups="pdk-cw-fs" remote="ubp" />
@@ -60,6 +86,7 @@
   <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="cm" />
   <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
   <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="cm" />
+  <project path="external/lz4" name="android_external_lz4" remote="cm" />
   <project path="external/mdnsresponder" name="aosp/platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cm" />
   <project path="external/openssl" name="android_external_openssl" groups="pdk" remote="ubp" />
@@ -75,6 +102,7 @@
   <project path="external/sonivox" name="android_external_sonivox" groups="pdk" remote="cm" />
   <project path="external/speex" name="android_external_speex" groups="pdk" remote="cm" />
   <project path="external/sqlite" name="android_external_sqlite" groups="pdk" remote="cm" />
+  <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" />
   <project path="external/stlport" name="aosp/platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="android_external_strace" groups="pdk-cw-fs" remote="cm" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="cm" />
@@ -96,6 +124,38 @@
   <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense" remote="cm" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cm" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="ubp" />
+
+
+
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" />
+  <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.1-caf-8084" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.1-caf-8916" />
+  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.1-caf-8974" />
+  <project path="hardware/qcom/audio-caf/msm8994" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" revision="cm-12.1-caf-8994" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" />
+  <project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.1-caf-8084" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.1-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.1-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.1-caf-8974" />
+  <project path="hardware/qcom/display-caf/msm8994" name="android_hardware_qcom_display" remote="cm" groups="qcom,qcom_display" revision="cm-12.1-caf-8994" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" groups="qcom" remote="cm" />
+  <project path="hardware/qcom/media-caf/apq8084" name="android_hardware_qcom_media" groups="qcom" revision="cm-12.1-caf-8084" remote="cm" />
+  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" groups="qcom" revision="cm-12.1-caf-8916" remote="cm" />
+  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" groups="qcom" revision="cm-12.1-caf-8960" remote="cm" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" groups="qcom" revision="cm-12.1-caf-8974" remote="cm" />
+  <project path="hardware/qcom/media-caf/msm8994" name="android_hardware_qcom_media" groups="qcom" revision="cm-12.1-caf-8994" remote="cm" />
+  <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" remote="aosp" groups="qcom_msm8960" />
+  <project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" remote="aosp" groups="qcom_msm8x26" />
+  <project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" remote="aosp" groups="qcom_msm8x27" />
+  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" remote="aosp" groups="qcom_msm8x74" />
+  <project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" remote="aosp" groups="qcom_msm8x84" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="cm" groups="qcom_wlan" />
+
+<!--
   <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" />
   <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" revision="cm-12.1-caf-8084" />
   <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="cm" revision="cm-12.1-caf-8916" />
@@ -106,7 +166,7 @@
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="qcom,qcom_display" remote="ubp" />
   <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="cm" />
   <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom" remote="cm" />
-<!-- TODO: Fix qcom hardware to work with ubuntu -->
+
   <project path="hardware/qcom/media" name="aosp/platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="aosp/platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/qcom/msm8x26" name="aosp/platform/hardware/qcom/msm8x26" groups="qcom_msm8x26" />
@@ -116,6 +176,8 @@
   <project path="hardware/qcom/power" name="aosp/platform/hardware/qcom/power" groups="qcom" />
   <project path="hardware/qcom/sensors" name="aosp/platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="aosp/platform/hardware/qcom/wlan" groups="qcom_wlan" />
+ TODO: Fix qcom hardware to work with ubuntu -->
+
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="ubp" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" groups="exynos5" remote="cm" />
   <project path="hardware/ti/omap3" name="aosp/platform/hardware/ti/omap3" groups="omap3" />
@@ -166,6 +228,7 @@
   <project path="system/keymaster" name="android_system_keymaster" groups="pdk" remote="cm" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="cm" />
   <project path="system/netd" name="android_system_netd" groups="pdk" remote="cm" />
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="cm" />
   <project path="system/security" name="android_system_security" groups="pdk" remote="cm" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="ubp" />
   <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
