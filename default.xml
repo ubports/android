@@ -208,9 +208,10 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="ubp" />
   <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
 
+  <project path="bootable/recovery" name="/android_bootable_recovery" groups="pdk" remote="ubp" /> 
+
   <!-- Ubuntu specific repos -->
-<!--   <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" revision="refs/heads/cm-12.0" /> -->
-  <project path="bootable/recovery" name="aosp/platform/bootable/recovery" groups="pdk" />
+
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="external/pigz" name="CyanogenMod/android_external_pigz" revision="refs/heads/cm-12.1" />
   <project path="external/koush/Superuser" name="CyanogenMod/Superuser" revision="refs/heads/cm-12.0"/>
