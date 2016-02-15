@@ -208,7 +208,7 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="ubp" />
   <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
 
-  <project path="bootable/recovery" name="/android_bootable_recovery" groups="pdk" remote="ubp" /> 
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="ubp" /> 
 
   <!-- Ubuntu specific repos -->
 
