@@ -60,6 +60,7 @@
   <project path="external/compiler-rt" name="aosp/platform/external/compiler-rt" groups="pdk" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="ubp" />
   <project path="external/expat" name="aosp/platform/external/expat" groups="pdk" />
+  <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="cm" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" groups="pdk" remote="cm" />
   <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" />
   <project path="external/flac" name="android_external_flac" groups="pdk" remote="cm" />
