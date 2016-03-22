@@ -93,6 +93,7 @@
   <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
   <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="cm" />
   <project path="external/lz4" name="android_external_lz4" remote="cm" />
+  <project path="external/lzma" name="android_external_lzma" remote="cm" />
   <project path="external/mdnsresponder" name="aosp/platform/external/mdnsresponder" groups="pdk" />
   <project path="external/mksh" name="android_external_mksh" groups="pdk" remote="cm" />
   <project path="external/openssl" name="android_external_openssl" groups="pdk" remote="ubp" />
