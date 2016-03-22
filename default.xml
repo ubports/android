@@ -111,6 +111,7 @@
   <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" />
   <project path="external/stlport" name="aosp/platform/external/stlport" groups="pdk" />
   <project path="external/strace" name="android_external_strace" groups="pdk-cw-fs" remote="cm" />
+  <project path="external/libtar" name="android_external_libtar" remote="cm" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" groups="pdk" remote="cm" />
   <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="cm" />
   <project path="external/tremolo" name="aosp/platform/external/tremolo" groups="pdk" />
