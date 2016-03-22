@@ -80,7 +80,7 @@
   <project path="external/jsoncpp" name="aosp/platform/external/jsoncpp" groups="pdk-cw-fs" />
   <project path="external/kernel-headers" name="aosp/platform/external/kernel-headers" groups="pdk-cw-fs" />
   <project path="external/libcap-ng" name="aosp/platform/external/libcap-ng" />
-  <project path="external/libcxx" name="aosp/platform/external/libcxx" groups="pdk" />
+  <project path="external/libcxx" name="android_external_libcxx" remote="ubp" groups="pdk" />
   <project path="external/libcxxabi" name="aosp/platform/external/libcxxabi" groups="pdk" />
   <project path="external/libgsm" name="aosp/platform/external/libgsm" groups="pdk" />
   <project path="external/liblzf" name="aosp/platform/external/liblzf" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
