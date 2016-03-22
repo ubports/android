@@ -30,7 +30,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="android_abi_cpp" groups="pdk" remote="cm" />
-  <project path="bionic" name="android_bionic" groups="pdk" remote="ubp" />
+  <project path="bionic" name="android_bionic" groups="pdk" remote="ubp" revision="refs/heads/ubp-5.1.1" />
   <project path="development" name="android_development" remote="ubp" />
 
 
@@ -88,7 +88,7 @@
   <project path="external/libogg" name="aosp/platform/external/libogg" groups="pdk" />
   <project path="external/libopus" name="aosp/platform/external/libopus" groups="pdk" />
   <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="ubp" />
-  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="ubp" />
+  <project path="external/libselinux" name="android_external_libselinux" remote="cm" />
   <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="cm" />
   <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
   <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="cm" />
@@ -103,7 +103,7 @@
   <project path="external/qemu-pc-bios" name="aosp/platform/external/qemu-pc-bios" groups="pdk-cw-fs" />
   <project path="external/safe-iop" name="aosp/platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="aosp/platform/external/scrypt" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
-  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="cm" />
+  <project path="external/sepolicy" name="android_external_sepolicy" groups="pdk" remote="ubp" />
   <project path="external/sfntly" name="aosp/platform/external/sfntly" groups="pdk-cw-fs" />
   <project path="external/skia" name="android_external_skia" groups="pdk-cw-fs" remote="cm" />
   <project path="external/sonivox" name="android_external_sonivox" groups="pdk" remote="cm" />
