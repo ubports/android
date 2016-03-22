@@ -88,7 +88,7 @@
   <project path="external/libogg" name="aosp/platform/external/libogg" groups="pdk" />
   <project path="external/libopus" name="aosp/platform/external/libopus" groups="pdk" />
   <project path="external/libpng" name="android_external_libpng" groups="pdk" remote="ubp" />
-  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="cm" />
+  <project path="external/libselinux" name="android_external_libselinux" groups="pdk" remote="ubp" />
   <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="cm" />
   <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
   <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="cm" />
@@ -221,7 +221,7 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="ubp" />
   <project path="tools/external/fat32lib" name="aosp/platform/tools/external/fat32lib" groups="tools" />
 
-  <project path="vendor/cm" name="android_vendor_cm" remote="cm" />
+  <project path="vendor/cm" name="android_vendor_cm" remote="ubp" />
 
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="ubp" /> 
 
