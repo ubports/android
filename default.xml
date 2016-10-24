@@ -18,6 +18,10 @@
   <remote name="ubp"
 	fetch="http://github.com/ubports"
 	revision="refs/heads/ubp-5.1" />
+	
+  <remote name="ab2ut"
+	fetch="http://github.com/ab2ut"
+	revision="refs/heads/ubp-5.1" />
 
   <remote name="them"
 	fetch="http://github.com/TheMuppets"
