@@ -114,7 +114,7 @@
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" remote="cm" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" groups="broadcom_wlan" remote="cm" />
   <project path="hardware/invensense" name="android_hardware_invensense" groups="invensense" remote="cm" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="cm" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="ubp" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="ubp" />
 
   <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" remote="cm" groups="qcom,qcom_audio" />
