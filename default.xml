@@ -39,9 +39,11 @@
 
   <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
   <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
+  <project path="external/bson" name="android_external_bson" remote="cm" />
   <project path="external/bzip2" name="aosp/platform/external/bzip2" groups="pdk" />
   <project path="external/checkpolicy" name="aosp/platform/external/checkpolicy" groups="pdk" />
   <project path="external/compiler-rt" name="aosp/platform/external/compiler-rt" groups="pdk" />
+  <project path="external/connectivity" name="android_external_connectivity" remote="cm" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="ubp" />
   <project path="external/expat" name="aosp/platform/external/expat" groups="pdk" />
   <project path="external/exfat" name="android_external_exfat" groups="pdk" remote="cm" />
@@ -76,6 +78,7 @@
   <project path="external/libsepol" name="android_external_libsepol" groups="pdk" remote="cm" />
   <project path="external/libunwind" name="aosp/platform/external/libunwind" groups="pdk" />
   <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="cm" />
+  <project path="external/libxml2" name="android_external_libxml2" groups="pdk" remote="cm"/>
   <project path="external/lz4" name="android_external_lz4" remote="cm" />
   <project path="external/lzma" name="android_external_lzma" remote="cm" />
   <project path="external/mdnsresponder" name="aosp/platform/external/mdnsresponder" groups="pdk" />
