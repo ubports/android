@@ -37,6 +37,7 @@
   <project path="bionic" name="android_bionic" groups="pdk" remote="ubp" revision="refs/heads/ubp-5.1.1" />
   <project path="development" name="android_development" remote="ubp" />
   <project path="device-files" name="device-files" remote="ubp" />
+  <project path="external/audioflingerglue" name="audioflingerglue" remote="ubp" />
 
   <project path="external/aac" name="aosp/platform/external/aac" groups="pdk" />
   <project path="external/bison" name="aosp/platform/external/bison" groups="pdk" />
