@@ -61,6 +61,8 @@
   <project path="external/gtest" name="aosp/platform/external/gtest" groups="pdk" />
   <project path="external/harfbuzz_ng" name="aosp/platform/external/harfbuzz_ng" groups="pdk-cw-fs" />
   <project path="external/icu" name="android_external_icu" groups="pdk" remote="cm" />
+  <project path="external/iptables" name="android_external_iptables" groups="pdk" remote="cm" />
+  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="cm" />  
   <project path="external/jemalloc" name="aosp/platform/external/jemalloc" groups="pdk,flo" />
   <project path="external/jhead" name="aosp/platform/external/jhead" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="external/jpeg" name="android_external_jpeg" groups="pdk" remote="cm" />
