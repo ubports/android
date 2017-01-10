@@ -17,6 +17,7 @@
 
   <remote name="ubp"
 	fetch="http://github.com/ubports"
+	review="http://review.ubports.com"
 	revision="refs/heads/ubp-5.1" />
 	
   <remote name="ab2ut"
