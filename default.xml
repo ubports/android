@@ -154,6 +154,7 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="cm" groups="qcom_wlan" />
 
   <project path="hardware/ril" name="ubports/android_hardware_ril" groups="pdk" remote="ubp" />
+  <project path="hardware/ril-caf" name="ubports/android_hardware_ril" groups="pdk" revision="ubp-5.1-caf" remote="ubp" />
   <project path="hardware/samsung_slsi/exynos5" name="android_hardware_samsung_slsi_exynos5" groups="exynos5" remote="cm" />
   <project path="hardware/ti/omap3" name="aosp/platform/hardware/ti/omap3" groups="omap3" />
   <project path="hardware/ti/omap4-aah" name="aosp/platform/hardware/ti/omap4-aah" groups="omap4-aah" />
