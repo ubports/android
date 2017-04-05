@@ -32,6 +32,9 @@
 	fetch="http://github.com/TheMuppets"
 	revision="refs/heads/cm-12.1" />
 
+  <remote name="peat-psuwit"
+	fetch="http://github.com/peat-psuwit" />
+
   <default remote="phablet"
            sync-j="6" />
 
@@ -203,6 +206,8 @@
   <project path="vendor/cm" name="ubports/android_vendor_cm" remote="ubp" />
 
   <project path="bootable/recovery" name="ubports/android_bootable_recovery" groups="pdk" remote="ubp" /> 
+
+  <project path="vendor/sony/system/timekeep" name="timekeep" remote="peat-psuwit" revision="ubuntu-touch" />
 
   <!-- Ubuntu specific repos -->
 
