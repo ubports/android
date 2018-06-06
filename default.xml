@@ -189,7 +189,6 @@
   <project path="prebuilts/misc" name="aosp_platform_prebuilts_misc" groups="pdk,tradefed" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="aosp_platform_prebuilts_python_linux-x86_2.7.5" groups="linux" />
-  <project path="prebuilts/qemu-kernel" name="aosp_platform_prebuilts_qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/tools" name="aosp_platform_prebuilts_tools" groups="pdk,tools" />
   <project path="sdk" name="aosp_platform_sdk" groups="pdk-cw-fs" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="system/core" name="ubports/android_system_core" groups="pdk" remote="ubp" />
