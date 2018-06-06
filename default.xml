@@ -172,23 +172,22 @@
   <project path="prebuilts/clang/linux-x86/3.2" name="aosp_platform_prebuilts_clang_linux-x86_3.2" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/arm/3.3" name="aosp_platform_prebuilts_clang_linux-x86_arm_3.3" groups="arm,linux,pdk-cw-fs" />
   <project path="prebuilts/clang/linux-x86/host/3.4" name="aosp_platform_prebuilts_clang_linux-x86_host_3.4" groups="pdk,linux" />
-  <project path="prebuilts/clang/linux-x86/host/3.5" name="aosp_platform_prebuilts_clang_linux-x86_host_3.5" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/clang/linux-x86/x86/3.3" name="aosp_platform_prebuilts_clang_linux-x86_x86_3.3" groups="linux,pdk-cw-fs,x86" />
   <project path="prebuilts/devtools" name="aosp_platform_prebuilts_devtools" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.8" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aosp_platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_arm_arm-eabi-4.8" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.8" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="aosp_platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.11-4.6" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.11-4.8" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_host_x86_64-w64-mingw32-4.8" groups="linux" />
-  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="aosp_platform_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.8" groups="linux,x86" />
-  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="aosp_platform_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="linux,x86" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86/64-linux-glibc2.11-4.6" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86/64-linux-glibc2.11-4.8" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/host/x86/64-w64-mingw32-4.8" groups="linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.8" name="aosp/platform/prebuilts/gcc/linux-x86/x86/x86/64-linux-android-4.8" groups="linux,x86" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="aosp/platform/prebuilts/gcc/linux-x86/x86/x86/64-linux-android-4.9" groups="linux,x86" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/libs/libedit" name="aosp_platform_prebuilts_libs_libedit" groups="pdk-cw-fs" />
   <project path="prebuilts/maven_repo/android" name="aosp_platform_prebuilts_maven_repo_android" groups="pdk-cw-fs" />
   <project path="prebuilts/misc" name="aosp_platform_prebuilts_misc" groups="pdk,tradefed" />
-  <project path="prebuilts/ndk" name="aosp_platform_prebuilts_ndk" groups="pdk" />
-  <project path="prebuilts/python/darwin-x86/2.7.5" name="aosp_platform_prebuilts_python_darwin-x86_2.7.5" groups="darwin" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="aosp_platform_prebuilts_python_linux-x86_2.7.5" groups="linux" />
   <project path="prebuilts/qemu-kernel" name="aosp_platform_prebuilts_qemu-kernel" groups="pdk" clone-depth="1" />
   <project path="prebuilts/tools" name="aosp_platform_prebuilts_tools" groups="pdk,tools" />
