@@ -171,7 +171,7 @@
   <project path="prebuilts/clang/linux-x86/3.1" name="aosp_platform_prebuilts_clang_linux-x86_3.1" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/3.2" name="aosp_platform_prebuilts_clang_linux-x86_3.2" groups="pdk,linux" />
   <project path="prebuilts/clang/linux-x86/arm/3.3" name="aosp_platform_prebuilts_clang_linux-x86_arm_3.3" groups="arm,linux,pdk-cw-fs" />
-  <project path="prebuilts/clang/linux-x86/host/3.4" name="aosp_platform_prebuilts_clang_linux-x86_host_3.4" groups="pdk,linux" />
+  <project path="prebuilts/clang/linux-x86/host/3.4" name="platform/prebuilts/clang/linux-x86/host/3.4" groups="pdk,linux" remote="aosp" />
   <project path="prebuilts/clang/linux-x86/host/3.5" name="platform/prebuilts/clang/linux-x86/host/3.5" groups="pdk,linux" remote="aosp" revision="refs/tags/android-5.1.1_r5" />
   <project path="prebuilts/clang/linux-x86/x86/3.3" name="aosp_platform_prebuilts_clang_linux-x86_x86_3.3" groups="linux,pdk-cw-fs,x86" />
   <project path="prebuilts/devtools" name="aosp_platform_prebuilts_devtools" />
