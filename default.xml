@@ -6,10 +6,6 @@
 	review="http://review.ubports.com"
 	revision="refs/tags/android-5.1.1_r5" />
 
-  <remote name="launchpad"
-        fetch="https://git.launchpad.net/~libhybris-maintainers/libhybris/+git/"
-        revision="stable" />
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
@@ -215,7 +211,7 @@
   <project path="external/koush/Superuser" name="CyanogenMod_Superuser" revision="refs/heads/cm-12.0"/>
   <project path="external/gpg" name="aosp_platform_external_gpg" revision="refs/heads/master" />
   <project path="ubuntu/assets" name="ubuntu_assets" revision="refs/heads/master" />
-  <project path="ubuntu/libhybris" name="libhybris" remote="launchpad" />
+  <project path="ubuntu/libhybris" name="ubports/libhybris" remote="ubp" revision="refs/heads/xenial" />
   <project path="ubuntu/platform-api" name="ubuntu_platform-api" revision="refs/heads/personal/w-ondra/phablet-5.x" />
   <project path="ubuntu/upstart-property-watcher" name="ubuntu_upstart-property-watcher" revision="refs/heads/personal/w-ondra/phablet-5.x" />
 
