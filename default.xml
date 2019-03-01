@@ -19,7 +19,7 @@
 	fetch="http://github.com"
 	review="http://review.ubports.com"
 	revision="refs/heads/ubp-5.1" />
-	
+
   <remote name="ab2ut"
 	fetch="http://github.com/ab2ut"
 	revision="refs/heads/ubp-5.1" />
@@ -66,7 +66,7 @@
   <project path="external/harfbuzz_ng" name="aosp_platform_external_harfbuzz_ng" groups="pdk-cw-fs" />
   <project path="external/icu" name="android_external_icu" groups="pdk" remote="cm" />
   <project path="external/iptables" name="android_external_iptables" groups="pdk" remote="cm" />
-  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="cm" />  
+  <project path="external/iproute2" name="android_external_iproute2" groups="pdk" remote="cm" />
   <project path="external/jemalloc" name="aosp_platform_external_jemalloc" groups="pdk,flo" />
   <project path="external/jhead" name="aosp_platform_external_jhead" groups="pdk" revision="refs/heads/personal/w-ondra/phablet-5.1.1_r5" />
   <project path="external/jpeg" name="android_external_jpeg" groups="pdk" remote="cm" />
@@ -200,7 +200,7 @@
 
   <project path="vendor/cm" name="ubports/android_vendor_cm" remote="ubp" />
 
-  <project path="bootable/recovery" name="ubports/android_bootable_recovery" groups="pdk" remote="ubp" /> 
+  <project path="bootable/recovery" name="ubports/android_bootable_recovery" groups="pdk" remote="ubp" />
 
   <project path="vendor/sony/system/timekeep" name="timekeep" remote="peat-psuwit" revision="ubuntu-touch" />
 
@@ -218,4 +218,20 @@
   <project path="ubuntu/ubuntu_prebuilt_initrd_debs" name="ubuntu_initrd_ubuntu_prebuilt_initrd_debs" revision="refs/heads/master" />
   <project path="ubuntu/ubuntu_prebuilt_initrd" name="ubuntu_initrd_ubuntu_prebuilt_initrd" revision="refs/heads/master" />
   <project path="ubuntu/prebuilts" name="ubuntu_prebuilts" revision="refs/heads/master" />
+
+  <!-- UBports devices -->
+  <project path="device/oneplus/bacon" name="ubports/android_device_oneplus_bacon-1" remote="ubp" />
+  <project path="device/oppo/common" name="ubports/android_device_oppo_common" remote="ubp" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="cm" />
+  <project path="kernel/oneplus/msm8974" name="ubports/android_kernel_oneplus_msm8974" remote="ubp" revision="refs/heads/ubp-5.1-caf" />
+  <project path="vendor/oppo" name="proprietary_vendor_oppo" remote="them" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="them" />
+  <project path="kernel/fairphone/FP2" name="ubports/android_kernel_fairphone_fp2" remote="ubp" />
+  <project path="device/fairphone/FP2" name="ubports/android_device_fairphone_fp2" remote="ubp" />
+  <project path="device/lge/hammerhead" name="ubports/android_device_lge_hammerhead" remote="ubp" />
+  <project path="kernel/lge/hammerhead" name="ubports/android_kernel_lge_hammerhead" remote="ubp" />
+  <project path="device/lge/mako" name="ubports/android_device_lge_mako" remote="ubp" />
+  <project path="kernel/google/msm" name="ubports/android_kernel_google_msm" remote="ubp" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" remote="ab2ut"/>
+  <project path="vendor/fairphone" name="proprietary_vendor_fairphone" remote="ab2ut"/>
 </manifest>
