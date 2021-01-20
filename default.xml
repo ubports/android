@@ -225,7 +225,7 @@
   <project path="device/qcom/common" name="android_device_qcom_common" remote="cm" />
   <project path="kernel/oneplus/msm8974" name="ubports/android_kernel_oneplus_msm8974" remote="ubp" revision="refs/heads/ubp-5.1-caf" />
   <project path="vendor/oppo" name="proprietary_vendor_oppo" remote="them" />
-  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="them" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="ab2ut" />
   <project path="kernel/fairphone/FP2" name="ubports/android_kernel_fairphone_fp2" remote="ubp" />
   <project path="device/fairphone/FP2" name="ubports/android_device_fairphone_fp2" remote="ubp" />
   <project path="device/lge/hammerhead" name="ubports/android_device_lge_hammerhead" remote="ubp" />
